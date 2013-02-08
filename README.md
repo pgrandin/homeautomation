@@ -14,7 +14,7 @@ Hardware prerequisistes :
 - a Velleman k8055 device. Mine is a 10cf:5500 Velleman Components, Inc. 8055 Experiment Interface Board
 
 Usage:
-- build with cmake, and copy to /usr/local/bin/
+- build with cmake && make, and make install
 - create the database :
   ```rrdtool create /var/spool/temper/temp.rrd --step 300 DS:temp:GAUGE:600:U:U RRA:AVERAGE:0.5:1:2016```
 - add a crontab entry like this one :
