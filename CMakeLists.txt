@@ -47,3 +47,10 @@ target_link_libraries(
 	hidapi-libusb
 	rrd
 )
+
+INSTALL(TARGETS thermostat
+  RUNTIME DESTINATION bin
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib
+)
+
